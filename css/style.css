@@ -18,7 +18,6 @@ main {
 
 .button:hover {
   background-color: #ff6b00;
-  cursor: pointer;
 }
 
 .header-container {
