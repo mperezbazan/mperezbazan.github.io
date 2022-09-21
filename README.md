@@ -1,19 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-> Description the project.
+> This project is the portfolio website, the project of the first module in Microverse Program
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
-## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
@@ -26,31 +23,25 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- Internet Browser
 
 ### Install
 
+- `git clone "https://github.com/mperezbazan/Portfolio.git`
+
 ### Usage
 
-### Run tests
-
-### Deployment
-
+- Open index.html in your Internet Browser
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Martín Pérez Bazán**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mperezbazan](https://github.com/mperezbazan)
+- Twitter: [@mperezbazan](https://twitter.com/mperezbazan)
+- LinkedIn: [mperezbazan](https://linkedin.com/in/mperezbazan)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
