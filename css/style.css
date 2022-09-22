@@ -10,12 +10,6 @@ main {
   min-height: 100vh;
 }
 
-.background-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .button:hover {
   background-color: #ff6b00;
 }
@@ -53,7 +47,7 @@ main {
 }
 
 .headline-container {
-  background-color: #1c1a19;
+  background: #1c1a19 url("../images/Illustration.png") 100% 100% no-repeat;
   margin: 0;
   padding: 120px 24px;
   display: flex;
