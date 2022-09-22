@@ -54,6 +54,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 12px;
 }
 
 .headline-title {
@@ -75,17 +76,21 @@ main {
 .headline-text {
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  margin: 0;
 }
 
 .social-media-button-group {
   display: flex;
   align-items: center;
   width: 200px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-media-button-group li {
-  list-style-type: none
+  list-style-type: none;
 }
+
 .social-media-button {
   background-color: #1c1a19;
   border: 0;
