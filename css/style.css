@@ -83,6 +83,9 @@ main {
   width: 200px;
 }
 
+.social-media-button-group li {
+  list-style-type: none
+}
 .social-media-button {
   background-color: #1c1a19;
   border: 0;
