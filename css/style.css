@@ -36,6 +36,7 @@ main {
   font-size: 18px;
   color: #fff;
   flex: 5;
+  text-decoration: none;
 }
 
 .header-menu-icon {
