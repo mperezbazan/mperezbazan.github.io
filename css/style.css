@@ -38,16 +38,6 @@ ul {
   color: #f4f1f0;
 }
 
-.button:disabled {
-  background-color: #f4f1f0;
-  color: #5b5957;
-}
-
-.fullwidth {
-  width: 100%;
-  text-align: center;
-}
-
 .header-container {
   background-color: #3c3a39;
   display: flex;
