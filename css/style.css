@@ -28,7 +28,24 @@ ul {
 }
 
 .button:hover {
-  background-color: #ff6b00;
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.fullwidth {
+  width: 100%;
+  text-align: center;
 }
 
 .header-container {
@@ -252,6 +269,7 @@ hr.works-divider {
   font-family: 'Crete Round', sans-serif;
   line-height: 88px;
   font-size: 72px;
+  font-weight: 400;
   padding-top: 120px;
   margin: 0;
 }
