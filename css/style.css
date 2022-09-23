@@ -10,8 +10,42 @@ main {
   min-height: 100vh;
 }
 
-.button:hover {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
   background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  height: 24px;
+  padding: 12px;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.fullwidth {
+  width: 100%;
+  text-align: center;
 }
 
 .header-container {
@@ -87,13 +121,201 @@ main {
   padding: 0;
 }
 
-.social-media-button-group li {
-  list-style-type: none;
-}
-
 .social-media-button {
   background-color: #1c1a19;
   border: 0;
   padding: 8px;
   border-radius: 50%;
+}
+
+.works-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200px, 56px, 568px, repeat(6, 386px);
+  row-gap: 24px;
+  padding-inline: 24px;
+  padding-block: 120px;
+}
+
+.work-title-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.works-title {
+  color: #1c1a19;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Crete Round', sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.works-divider-container {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+hr.works-divider {
+  border-top: 1px solid #212121;
+  margin: 0;
+  padding: 0;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 12px;
+}
+
+.bg-image {
+  background-image: url('../images/image1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+}
+
+.light {
+  color: #091e42;
+}
+
+.dark {
+  color: #fff;
+}
+
+.work-content-dark {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.work-title {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  margin: 0;
+}
+
+.work-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.work-tag-group {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+}
+
+.work-tag {
+  border: 1px solid #8993a4;
+  background-color: #fff;
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 12px;
+}
+
+.work-tag-dark {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 12px;
+}
+
+.work-footer-container-light {
+  display: flex;
+}
+
+.work-footer-container-dark {
+  width: 100%;
+  background-color: #ff6b00;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.about-container {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-inline: 24px;
+  height: 652px;
+  background-image: url("../images/illustration-about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.about-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+  line-height: 88px;
+  font-size: 72px;
+  font-weight: 400;
+  padding-top: 120px;
+  margin: 0;
+}
+
+.about-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding: 0;
+}
+
+.about-divider-container {
+  padding-inline: 24px;
+}
+
+.skills-container {
+  padding: 120px 24px;
+}
+
+.skills-items-title-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 0;
+}
+
+.skills-items-title {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-block: 44px;
+}
+
+.skills-item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.skills-items {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
 }
