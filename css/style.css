@@ -10,6 +10,23 @@ main {
   min-height: 100vh;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  height: 24px;
+  padding: 12px;
+  width: fit-content;
+}
+
 .button:hover {
   background-color: #fff5e1;
   color: #f55800;
@@ -19,6 +36,16 @@ main {
 .button:active {
   background-color: #e05304;
   color: #f4f1f0;
+}
+
+.button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.fullwidth {
+  width: 100%;
+  text-align: center;
 }
 
 .header-container {
@@ -94,10 +121,6 @@ main {
   padding: 0;
 }
 
-.social-media-button-group li {
-  list-style-type: none;
-}
-
 .social-media-button {
   background-color: #1c1a19;
   border: 0;
@@ -109,10 +132,12 @@ main {
   background-color: #fff;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 200px, 56px, 568px, repeat(6,386px);
+  grid-template-rows: 200px, 56px, 568px, repeat(6, 386px);
   row-gap: 24px;
   padding-inline: 24px;
+  padding-block: 120px;
 }
+
 .work-title-container {
   display: flex;
   align-items: flex-end;
@@ -123,7 +148,6 @@ main {
   font-size: 40px;
   font-weight: 400;
   font-family: 'Crete Round', sans-serif;
-  padding-top: 60px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -134,7 +158,7 @@ main {
 }
 
 hr.works-divider {
-  border-top: 1px solid #212121 ;
+  border-top: 1px solid #212121;
   margin: 0;
   padding: 0;
 }
@@ -146,8 +170,9 @@ hr.works-divider {
 }
 
 .bg-image {
-  background-image:  url('../images/image1.png');
-  background-repeat:repeat-x;
+  background-image: url('../images/image1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 90px;
 }
 
@@ -168,7 +193,7 @@ hr.works-divider {
 }
 
 .work-title {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -184,7 +209,6 @@ hr.works-divider {
 }
 
 .work-tag-group {
-  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
@@ -194,7 +218,7 @@ hr.works-divider {
 .work-tag {
   border: 1px solid #8993a4;
   background-color: #fff;
-  color: #091E42;
+  color: #091e42;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -214,22 +238,12 @@ hr.works-divider {
   display: flex;
 }
 
-.button {
-  background-color:#ff6b00 ;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  height: 24px;
-  padding: 12px;
-}
-
 .work-footer-container-dark {
   width: 100%;
   background-color: #ff6b00;
   height: 48px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -255,6 +269,7 @@ hr.works-divider {
   font-family: 'Crete Round', sans-serif;
   line-height: 88px;
   font-size: 72px;
+  font-weight: 400;
   padding-top: 120px;
   margin: 0;
 }
