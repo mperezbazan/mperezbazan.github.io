@@ -22,9 +22,10 @@ ul {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  height: 24px;
+  height: auto;
   padding: 12px;
   width: fit-content;
+  border: none;
 }
 
 .button:hover {
@@ -318,4 +319,48 @@ hr.works-divider {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-size: 22px;
+}
+
+#form-headline {
+  font-family: 'Inter', sans-serif, 'Courier New', Courier, monospace;
+  font-weight: 700;
+  line-height: 44px;
+  font-size: 32px;
+  text-align: center;
+  color: #172b4d;
+  padding: 24px;
+}
+
+.white-background{
+  background-color: #e5e5e5;
+}
+
+.make-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs{
+  padding: 5px;
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.make-flex textarea{
+  background-color: #fbf8f7;
+}
+
+.footer-button-group {
+  display:flex;
+  height: 10px;
+  background-color:  #e5e5e5;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+footer {
+  background-color:  #e5e5e5;
 }
