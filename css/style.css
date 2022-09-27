@@ -22,9 +22,10 @@ ul {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  height: 24px;
+  height: auto;
   padding: 12px;
   width: fit-content;
+  border: none;
 }
 
 .button:hover {
@@ -350,4 +351,16 @@ hr.works-divider {
 
 .make-flex textarea{
   background-color: #fbf8f7;
+}
+
+.footer-button-group {
+  display:flex;
+  height: 10px;
+  background-color:  #e5e5e5;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+footer {
+  background-color:  #e5e5e5;
 }
