@@ -13,11 +13,11 @@
 <body>
   <main>
     <header class="header-container">
-      <div class="header-title-container"><a class="header-title" href="/" alt="Logo">John Doe</a></div>
+      <div class="header-title-container"><a class="header-title" href="/" alt="Logo">mPB</a></div>
       <nav class="menu-icon-container"><a class="button-head header-menu-icon" href="#"><img src="./images/Menu.svg" alt="Menu icon"/></a></nav>
     </header>
     <section class="headline-container">
-      <h1 class="headline-title">Hey There.<br>I’m Alex</h1>
+      <h1 class="headline-title">Hey There.<br>I’m Martin</h1>
       <p class="headline-subtitle">I’am a Software Developer</p>
       <p class="headline-text">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
       <ul class="social-media-button-group">
@@ -236,9 +236,34 @@
               <li class="skills-item-detail">Gitlab</li>
               <li class="skills-item-detail">Terminal</li>
             </ul>
-          </li> 
+          </li>
         </ul>
       </div>
+    </section>
+    <section class="white-background make-flex">
+      <form class="make-flex" action="https://formspree.io/f/mrgdqveo" method="POST">
+        <h3 id="form-headline">
+          I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+        </h3>
+        <label for="name" hidden>Name</label>  
+        <input type="text" name="Name" id="name" class="inputs" placeholder="Full name" maxlength="50" required>
+        <label for="email" hidden>Email</label>
+        <input type="email" name="Email" id="email" class="inputs" placeholder="Email address" required>
+        <label for="message" hidden>Message</label>
+        <textarea name="Message" id="message" placeholder="Enter text here" class="inputs" id="" cols="30" rows="3" maxlength="500" required></textarea>
+        <button type="submit" name="button" class="button">Get in touch</button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <section class="footer-container">
+      <ul class="footer-button-group">
+        <li class="footer-social-media-button"><a href="https://github.com/mperezbazan"><img src="./images/GitHub-dark.svg" alt="Github icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img src="./images/Linkedin-dark.svg" alt="Linkedin icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img src="./images/Angelist-dark.svg" alt="Angelist icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://twitter.com/mperezbazan"><img src="./images/Twitter-dark.svg" alt="Twitter icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://medium.com/@martin.perezbazan"><img src="./images/Medium-dark.svg" alt="Medium icon"/></a></li>
+      </ul>
+      <hr class="footer-bottom-line"/>
     </section>
   </main>
 </body>
