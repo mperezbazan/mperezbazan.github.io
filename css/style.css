@@ -538,6 +538,7 @@ ul {
 
   .skills-items {
     min-width: 282px;
+    padding: 8px;
   }
 
   .skills-items-container {
@@ -545,7 +546,6 @@ ul {
     flex-direction: row;
     gap: 164px;
     justify-content: space-between;
-    padding: 20px;
   }
 
   .skills-items-title-container {
