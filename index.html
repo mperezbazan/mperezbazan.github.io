@@ -240,27 +240,31 @@
         </ul>
       </div>
     </section>
-    <section class="white-background">
-      <form class="make-flex">
+    <section class="white-background make-flex">
+      <form class="make-flex" action="https://formspree.io/f/mrgdqveo" method="POST">
         <h3 id="form-headline">
           I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
         </h3>
-        <input type="text" class="inputs" placeholder="Full name">
-        <input type="text" class="inputs" placeholder="Full name">
-        <textarea placeholder="enter something" name="" class="inputs" id="" cols="30" rows="10"></textarea>
+        <label for="name" hidden>Name</label>  
+        <input type="text" name="Name" id="name" class="inputs" placeholder="Full name" maxlength="50" required>
+        <label for="email" hidden>Email</label>
+        <input type="email" name="Email" id="email" class="inputs" placeholder="Email address" required>
+        <label for="message" hidden>Message</label>
+        <textarea name="Message" id="message" placeholder="Enter text here" class="inputs" id="" cols="30" rows="3" maxlength="500" required></textarea>
         <button type="submit" name="button" class="button">Get in touch</button>
       </form>
     </section>
     <!-- Footer -->
-    <footer>
+    <section class="footer-container">
       <ul class="footer-button-group">
-        <li class="button-head social-media-button"><a href="https://github.com/mperezbazan"><img src="./images/GitHub.svg" alt="Github icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img src="./images/Linkedin.svg" alt="Linkedin icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img src="./images/Angelist.svg" alt="Angelist icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://twitter.com/mperezbazan"><img src="./images/Twitter.svg" alt="Twitter icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://medium.com/@martin.perezbazan"><img src="./images/Medium.svg" alt="Medium icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://github.com/mperezbazan"><img src="./images/GitHub-dark.svg" alt="Github icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img src="./images/Linkedin-dark.svg" alt="Linkedin icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img src="./images/Angelist-dark.svg" alt="Angelist icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://twitter.com/mperezbazan"><img src="./images/Twitter-dark.svg" alt="Twitter icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://medium.com/@martin.perezbazan"><img src="./images/Medium-dark.svg" alt="Medium icon"/></a></li>
       </ul>
-    </footer>
+      <hr class="footer-bottom-line"/>
+    </section>
   </main>
 </body>
 </html>
