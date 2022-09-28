@@ -354,6 +354,10 @@ ul {
 .white-background {
   background-color: #fff;
   padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
 .make-flex {
@@ -559,6 +563,28 @@ ul {
   }
 
   .skills-item-list {
+    align-items: flex-start;
+  }
+
+  .white-background {
+    flex-direction: row;
+    padding: 130px;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  #form-headline {
+    flex-grow: 1;
+    flex-basis: 455px;
+    text-align: left;
+    margin: 0;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-form {
+    flex-grow: 3;
+    flex-basis: 684px;
     align-items: flex-start;
   }
 
