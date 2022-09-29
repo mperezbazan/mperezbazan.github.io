@@ -14,12 +14,22 @@
   <main>
     <header class="header-container">
       <div class="header-title-container"><a class="header-title" href="/" alt="Logo">mPB</a></div>
-      <nav class="menu-icon-container"><a class="button-head header-menu-icon" href="#"><img src="./images/Menu.svg" alt="Menu icon"/></a></nav>
+      <nav class="menu-icon-container lg-none"><a class="button-head header-menu-icon" href="#"><img src="./images/Menu.svg" alt="Menu icon"/></a></nav>
+      <nav class="menu-container-lg sm-none">
+        <ul class="nav-button-group">
+          <li class="nav-button"><a href="#Portfolio">Portfolio</a></li>
+          <li class="nav-button"><a href="#About">About</a></li>
+          <li class="nav-button"><a href="#Contact">Contact</a></li>
+          <li class="nav-button"><a href="mailto:martin.perezbazan@gmail.com"><img src="./images/Email.svg"></a></li>
+        </ul>
+      </nav>
     </header>
     <section class="headline-container">
-      <h1 class="headline-title">Hey There.<br>I’m Martin</h1>
-      <p class="headline-subtitle">I’am a Software Developer</p>
-      <p class="headline-text">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <div class="headline-content">
+        <h1 class="headline-title">Hey There.<br>I’m Martin</h1>
+        <p class="headline-subtitle">I’am a Software Developer</p>
+        <p class="headline-text">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      </div>
       <ul class="social-media-button-group">
         <li class="button-head social-media-button"><a href="https://github.com/mperezbazan"><img src="./images/GitHub.svg" alt="Github icon"/></a></li>
         <li class="button-head social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img src="./images/Linkedin.svg" alt="Linkedin icon"/></a></li>
@@ -28,41 +38,51 @@
         <li class="button-head social-media-button"><a href="https://medium.com/@martin.perezbazan"><img src="./images/Medium.svg" alt="Medium icon"/></a></li>
       </ul>
     </section>
-    <section class="works-container">
+    <section class="works-container" id="Portfolio">
       <div class="works-title-container">
         <h2 class="works-title">
           My Recent Works
         </h2>
-      </div>
-      <div class="works-divider-container">
         <hr class="works-divider"/>
       </div>
-      <article class="work-container">
-        <div class="work-image-container">
-          <img src="./images/image2.png"/>
+      <article class="work-container work-main">
+        <div class="work-main-image-container">
+          <img class="work-main-image" src="./images/image2.png"/>
         </div>
-        <h3 class="work-title light">
-          Multi-Post Stories
-        </h3>
-        <p class="work-text light">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="work-tag-group">
-          <li class="work-tag light">css</li>
-          <li class="work-tag light">html</li>
-          <li class="work-tag light">bootstrap</li>
-          <li class="work-tag light">Ruby</li>
-        </ul>
-        <div class="work-footer-container-light">
-          <a class="button">
+        <div class="work-main-content">
+          <h3 class="work-title light">
+            Multi-Post Stories
+          </h3>
+          <p class="work-text light">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="work-tag-group">
+            <li class="work-tag light">css</li>
+            <li class="work-tag light">html</li>
+            <li class="work-tag light">bootstrap</li>
+            <li class="work-tag light">Ruby</li>
+          </ul>
+          <div class="work-footer-container-light">
+            <a class="button">
+              See Project
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="work-container work-light sm-none">
+        <div class="work-footer-container-dark">
+          <a class="work-button button dark fullwidth">
             See Project
           </a>
         </div>
       </article>
-      <article class="work-container bg-image">
+      <article class="work-container bg-image data-image">
         <div class="work-content-dark">
-          <h3 class="work-title dark">
+          <h3 class="work-title dark lg-none">
             Profesional Art Printing Data
+          </h3>
+          <h3 class="work-title dark sm-none">
+            Data Dashboard Healthcare
           </h3>
           <p class="work-text dark">
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -73,16 +93,19 @@
             <li class="work-tag-dark">Ruby</li>
           </ul>
         </div>
-        <div class="work-footer-container-dark">
+        <div class="work-footer-container-dark lg-none">
           <a class="work-button button dark fullwidth">
             See Project
           </a>
         </div>
       </article>
-      <article class="work-container bg-image">
+      <article class="work-container bg-image website-image">
         <div class="work-content-dark">
-          <h3 class="work-title dark">
+          <h3 class="work-title dark lg-none">
             Profesional Art Printing Data
+          </h3>
+          <h3 class="work-title dark sm-none">
+            Website Protfolio
           </h3>
           <p class="work-text dark">
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -93,16 +116,16 @@
             <li class="work-tag-dark">Ruby</li>
           </ul>
         </div>
-        <div class="work-footer-container-dark">
+        <div class="work-footer-container-dark lg-none">
           <a class="work-button button dark fullwidth">
             See Project
           </a>
         </div>
       </article>
-      <article class="work-container bg-image">
+      <article class="work-container bg-image professional-image">
         <div class="work-content-dark">
           <h3 class="work-title dark">
-            Profesional Art Printing Data
+            Profesional Art Printing Data <span class="sm-none">More</span>
           </h3>
           <p class="work-text dark">
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -113,16 +136,19 @@
             <li class="work-tag-dark">Ruby</li>
           </ul>
         </div>
-        <div class="work-footer-container-dark">
+        <div class="work-footer-container-dark lg-none">
           <a class="work-button button dark fullwidth">
             See Project
           </a>
         </div>
       </article>
-      <article class="work-container bg-image">
+      <article class="work-container bg-image data-image">
         <div class="work-content-dark">
-          <h3 class="work-title dark">
+          <h3 class="work-title dark lg-none">
             Profesional Art Printing Data
+          </h3>
+          <h3 class="work-title dark sm-none">
+            Data Dashboard Healthcare
           </h3>
           <p class="work-text dark">
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -133,16 +159,19 @@
             <li class="work-tag-dark">Ruby</li>
           </ul>
         </div>
-        <div class="work-footer-container-dark">
+        <div class="work-footer-container-dark lg-none">
           <a class="work-button button dark fullwidth">
             See Project
           </a>
         </div>
       </article>
-      <article class="work-container bg-image">
+      <article class="work-container bg-image website-image">
         <div class="work-content-dark">
-          <h3 class="work-title dark">
+          <h3 class="work-title dark lg-none">
             Profesional Art Printing Data
+          </h3>
+          <h3 class="work-title dark sm-none">
+            Website Protfolio
           </h3>
           <p class="work-text dark">
             A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -153,13 +182,13 @@
             <li class="work-tag-dark">Ruby</li>
           </ul>
         </div>
-        <div class="work-footer-container-dark">
+        <div class="work-footer-container-dark lg-none">
           <a class="work-button button dark fullwidth">
             See Project
           </a>
         </div>
       </article>
-      <article class="work-container bg-image">
+      <article class="work-container bg-image lg-none">
         <div class="work-content-dark">
           <h3 class="work-title dark">
             Profesional Art Printing Data
@@ -180,7 +209,7 @@
         </div>
       </article>
     </section>
-    <section class="about-container">
+    <section class="about-container" id="About">
       <div class="about-content">
         <h2 class="about-title">About me</h2>
         <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -240,11 +269,11 @@
         </ul>
       </div>
     </section>
-    <section class="white-background make-flex">
-      <form class="make-flex" action="https://formspree.io/f/mrgdqveo" method="POST">
-        <h3 id="form-headline">
-          I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-        </h3>
+    <section class="white-background" id="Contact">
+      <h3 id="form-headline">
+        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+      </h3>
+      <form class="make-flex contact-form" action="https://formspree.io/f/mrgdqveo" method="POST">
         <label for="name" hidden>Name</label>  
         <input type="text" name="Name" id="name" class="inputs" placeholder="Full name" maxlength="50" required>
         <label for="email" hidden>Email</label>
@@ -257,13 +286,13 @@
     <!-- Footer -->
     <section class="footer-container">
       <ul class="footer-button-group">
-        <li class="footer-social-media-button"><a href="https://github.com/mperezbazan"><img src="./images/GitHub-dark.svg" alt="Github icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://github.com/mperezbazan"><img src="./githubIcon.png" alt="Github icon"/></a></li>
         <li class="footer-social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img src="./images/Linkedin-dark.svg" alt="Linkedin icon"/></a></li>
         <li class="footer-social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img src="./images/Angelist-dark.svg" alt="Angelist icon"/></a></li>
         <li class="footer-social-media-button"><a href="https://twitter.com/mperezbazan"><img src="./images/Twitter-dark.svg" alt="Twitter icon"/></a></li>
         <li class="footer-social-media-button"><a href="https://medium.com/@martin.perezbazan"><img src="./images/Medium-dark.svg" alt="Medium icon"/></a></li>
       </ul>
-      <hr class="footer-bottom-line"/>
+      <hr class="footer-bottom-line lg-none"/>
     </section>
   </main>
 </body>
