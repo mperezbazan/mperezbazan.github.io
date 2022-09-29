@@ -524,6 +524,10 @@ ul {
     height: 435px;
   }
 
+  .work-container.work-light.sm-none {
+    border: 1px solid #000;
+  }
+
   .bg-image {
     padding: 16px;
     justify-content: flex-end;
