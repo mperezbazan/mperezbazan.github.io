@@ -10,6 +10,11 @@ main {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -185,10 +190,16 @@ ul {
   gap: 10px 12px;
 }
 
+.work-main-image {
+  width: 100%;
+  max-width: 684px;
+}
+
 .work-main-content {
   display: flex;
   flex-direction: column;
   gap: 10px 12px;
+  flex: 3;
 }
 
 .bg-image {
@@ -429,16 +440,17 @@ ul {
 
   .header-container {
     height: 72px;
+    padding-inline: 12%;
   }
 
   .headline-container {
     background: #1c1a19 url("../images/Illustration-header.png") 100% 0% no-repeat;
     background-size: 650px auto;
-    height: 95vh;
+    height: 92vh;
     flex-direction: row;
     justify-content: flex-start;
     gap: 88px;
-    padding: 0 12px;
+    padding: 0 36px;
   }
 
   .headline-content {
@@ -449,6 +461,22 @@ ul {
     gap: 24px;
     order: 1;
     padding: 192px 0;
+  }
+
+  .headline-title {
+    font-size: 72px;
+    line-height: 81.5px;
+  }
+
+  .headline-subtitle {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 500;
+  }
+
+  .headline-text {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .social-media-button-group {
@@ -469,9 +497,6 @@ ul {
   .works-title-container {
     grid-column: 1/4;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     margin-bottom: 90px;
   }
 
@@ -480,7 +505,7 @@ ul {
   }
 
   .works-divider {
-    width: 60%;
+    width: 70%;
   }
 
   .work-main {
@@ -489,8 +514,9 @@ ul {
     gap: 24px;
   }
 
-  .work-main-image {
-    height: 448px;
+  .work-main-image-container {
+    text-align: center;
+    flex: 2;
   }
 
   .work-container {
@@ -508,6 +534,16 @@ ul {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+  }
+
+  .work-title.light {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .work-text.light {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .data-image {
@@ -534,6 +570,11 @@ ul {
 
   .about-title {
     padding-top: 0;
+  }
+
+  .about-text {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .skills-container {
