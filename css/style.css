@@ -31,6 +31,8 @@ ul {
   padding: 12px;
   width: fit-content;
   border: none;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
 }
 
 .button:hover {
