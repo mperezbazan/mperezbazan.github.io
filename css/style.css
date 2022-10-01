@@ -22,6 +22,7 @@ ul {
 }
 
 .button {
+  box-sizing: border-box;
   background-color: #ff6b00;
   color: #fff;
   font-family: 'Inter', sans-serif;
@@ -258,6 +259,13 @@ ul {
   font-weight: 500;
   font-size: 15px;
   padding: 10px 12px;
+  transition-duration: 280ms;
+  transition-property: "transform";
+}
+
+.work-tag:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .work-tag-dark {
@@ -638,4 +646,8 @@ ul {
   .lg-none {
     display: none;
   }
+}
+
+.get-in-touch-form {
+  width: 90%;
 }
