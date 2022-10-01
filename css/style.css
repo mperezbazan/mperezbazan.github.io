@@ -223,6 +223,13 @@ hr.works-divider {
   font-weight: 500;
   font-size: 15px;
   padding: 10px 12px;
+  transition-duration: 280ms;
+  transition-property: "transform";
+}
+
+.work-tag:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .work-tag-dark {
@@ -346,8 +353,13 @@ hr.works-divider {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #dbd8d7;
+  width:100%;
 }
 
 .make-flex textarea{
   background-color: #fbf8f7;
+}
+
+.get-in-touch-form {
+  width: 90%;
 }
