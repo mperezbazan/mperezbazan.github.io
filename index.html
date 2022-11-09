@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+
   <title>Portfolio</title>
 </head>
+
 <body>
   <main>
     <header class="header-container">
       <div class="header-title-container"><a class="header-title" href="/" alt="Logo">mPB</a></div>
-      <nav class="menu-icon-container lg-none"><a class="button-head header-menu-icon" href="#"><img src="./images/Menu.svg" alt="Menu icon"/></a></nav>
+      <nav class="menu-icon-container lg-none"><button type='button' class="button-head header-menu-icon"
+          id="hamburger-button"><img src="./images/Menu.svg" alt="Menu icon" /></button></nav>
       <nav class="menu-container-lg sm-none">
         <ul class="nav-button-group">
           <li class="nav-button"><a href="#Portfolio">Portfolio</a></li>
@@ -23,19 +29,33 @@
           <li class="nav-button"><a href="mailto:martin.perezbazan@gmail.com"><img src="./images/Email.svg"></a></li>
         </ul>
       </nav>
+      <div class="menu-mobile-container display-none">
+        <button id='closeBtn' type='button' class="close-button">&#10799;</button>
+        <ul class="menu-menu-list">
+          <li><a class="menu-button" href="#Portfolio">Portfolio</a></li>
+          <li><a class="menu-button" href="#About">About</a></li>
+          <li><a class="menu-button" href="#Contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <section class="headline-container">
       <div class="headline-content">
         <h1 class="headline-title">Hey There.<br>I’m Martin</h1>
         <p class="headline-subtitle">I’am a Software Developer</p>
-        <p class="headline-text">I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <p class="headline-text">I can help you build a product, feature or website Look through some of my work and
+          experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
       </div>
       <ul class="social-media-button-group">
-        <li class="button-head social-media-button"><a href="https://github.com/mperezbazan"><img src="./images/GitHub.svg" alt="Github icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img src="./images/Linkedin.svg" alt="Linkedin icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img src="./images/Angelist.svg" alt="Angelist icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://twitter.com/mperezbazan"><img src="./images/Twitter.svg" alt="Twitter icon"/></a></li>
-        <li class="button-head social-media-button"><a href="https://medium.com/@martin.perezbazan"><img src="./images/Medium.svg" alt="Medium icon"/></a></li>
+        <li class="button-head social-media-button"><a href="https://github.com/mperezbazan"><img
+              src="./images/GitHub.svg" alt="Github icon" /></a></li>
+        <li class="button-head social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img
+              src="./images/Linkedin.svg" alt="Linkedin icon" /></a></li>
+        <li class="button-head social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img
+              src="./images/Angelist.svg" alt="Angelist icon" /></a></li>
+        <li class="button-head social-media-button"><a href="https://twitter.com/mperezbazan"><img
+              src="./images/Twitter.svg" alt="Twitter icon" /></a></li>
+        <li class="button-head social-media-button"><a href="https://medium.com/@martin.perezbazan"><img
+              src="./images/Medium.svg" alt="Medium icon" /></a></li>
       </ul>
     </section>
     <section class="works-container" id="Portfolio">
@@ -43,188 +63,27 @@
         <h2 class="works-title">
           My Recent Works
         </h2>
-        <hr class="works-divider"/>
+        <hr class="works-divider" />
       </div>
-      <article class="work-container work-main">
-        <div class="work-main-image-container">
-          <img class="work-main-image" src="./images/image2.png"/>
-        </div>
-        <div class="work-main-content">
-          <h3 class="work-title light">
-            Multi-Post Stories
-          </h3>
-          <p class="work-text light">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul class="work-tag-group">
-            <li class="work-tag light">css</li>
-            <li class="work-tag light">html</li>
-            <li class="work-tag light">bootstrap</li>
-            <li class="work-tag light">Ruby</li>
-          </ul>
-          <div class="work-footer-container-light">
-            <a class="button">
-              See Project
-            </a>
-          </div>
-        </div>
-      </article>
-      <article class="work-container work-light sm-none">
-        <div class="work-footer-container-dark">
-          <a class="work-button button dark fullwidth">
-            See Project
-          </a>
-        </div>
-      </article>
-      <article class="work-container bg-image data-image">
-        <div class="work-content-dark">
-          <h3 class="work-title dark lg-none">
-            Profesional Art Printing Data
-          </h3>
-          <h3 class="work-title dark sm-none">
-            Data Dashboard Healthcare
-          </h3>
-          <p class="work-text dark">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="work-tag-group">
-            <li class="work-tag-dark">html</li>
-            <li class="work-tag-dark">bootstrap</li>
-            <li class="work-tag-dark">Ruby</li>
-          </ul>
-        </div>
-        <div class="work-footer-container-dark lg-none">
-          <a class="work-button button dark fullwidth">
-            See Project
-          </a>
-        </div>
-      </article>
-      <article class="work-container bg-image website-image">
-        <div class="work-content-dark">
-          <h3 class="work-title dark lg-none">
-            Profesional Art Printing Data
-          </h3>
-          <h3 class="work-title dark sm-none">
-            Website Protfolio
-          </h3>
-          <p class="work-text dark">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="work-tag-group">
-            <li class="work-tag-dark">html</li>
-            <li class="work-tag-dark">bootstrap</li>
-            <li class="work-tag-dark">Ruby</li>
-          </ul>
-        </div>
-        <div class="work-footer-container-dark lg-none">
-          <a class="work-button button dark fullwidth">
-            See Project
-          </a>
-        </div>
-      </article>
-      <article class="work-container bg-image professional-image">
-        <div class="work-content-dark">
-          <h3 class="work-title dark">
-            Profesional Art Printing Data <span class="sm-none">More</span>
-          </h3>
-          <p class="work-text dark">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="work-tag-group">
-            <li class="work-tag-dark">html</li>
-            <li class="work-tag-dark">bootstrap</li>
-            <li class="work-tag-dark">Ruby</li>
-          </ul>
-        </div>
-        <div class="work-footer-container-dark lg-none">
-          <a class="work-button button dark fullwidth">
-            See Project
-          </a>
-        </div>
-      </article>
-      <article class="work-container bg-image data-image">
-        <div class="work-content-dark">
-          <h3 class="work-title dark lg-none">
-            Profesional Art Printing Data
-          </h3>
-          <h3 class="work-title dark sm-none">
-            Data Dashboard Healthcare
-          </h3>
-          <p class="work-text dark">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="work-tag-group">
-            <li class="work-tag-dark">html</li>
-            <li class="work-tag-dark">bootstrap</li>
-            <li class="work-tag-dark">Ruby</li>
-          </ul>
-        </div>
-        <div class="work-footer-container-dark lg-none">
-          <a class="work-button button dark fullwidth">
-            See Project
-          </a>
-        </div>
-      </article>
-      <article class="work-container bg-image website-image">
-        <div class="work-content-dark">
-          <h3 class="work-title dark lg-none">
-            Profesional Art Printing Data
-          </h3>
-          <h3 class="work-title dark sm-none">
-            Website Protfolio
-          </h3>
-          <p class="work-text dark">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="work-tag-group">
-            <li class="work-tag-dark">html</li>
-            <li class="work-tag-dark">bootstrap</li>
-            <li class="work-tag-dark">Ruby</li>
-          </ul>
-        </div>
-        <div class="work-footer-container-dark lg-none">
-          <a class="work-button button dark fullwidth">
-            See Project
-          </a>
-        </div>
-      </article>
-      <article class="work-container bg-image lg-none">
-        <div class="work-content-dark">
-          <h3 class="work-title dark">
-            Profesional Art Printing Data
-          </h3>
-          <p class="work-text dark">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul class="work-tag-group">
-            <li class="work-tag-dark">html</li>
-            <li class="work-tag-dark">bootstrap</li>
-            <li class="work-tag-dark">Ruby</li>
-          </ul>
-        </div>
-        <div class="work-footer-container-dark">
-          <a class="work-button button dark fullwidth">
-            See Project
-          </a>
-        </div>
-      </article>
     </section>
     <section class="about-container" id="About">
       <div class="about-content">
         <h2 class="about-title">About me</h2>
-        <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look
+          through some of my work and experience! If you like what you see and have a project you need coded, don’t
+          hestiate to contact me.</p>
         <a class="button">
           Get My Resume
         </a>
       </div>
       <div class="about-divider-container">
-        <hr/>
+        <hr />
       </div>
       <div class="skills-container">
         <ul class="skills-items-container">
           <li class="skills-items">
             <div class="skills-items-title-container">
-              <img class="skills-items-img" src="./images/Rectangle 55.svg"/>
+              <img class="skills-items-img" src="./images/Rectangle 55.svg" />
               <p class="skills-items-title">
                 Language
               </p>
@@ -238,7 +97,7 @@
           </li>
           <li class="skills-items">
             <div class="skills-items-title-container">
-              <img class="skills-items-img" src="./images/Rectangle 56.svg"/>
+              <img class="skills-items-img" src="./images/Rectangle 56.svg" />
               <p class="skills-items-title">
                 Frameworks
               </p>
@@ -253,7 +112,7 @@
           </li>
           <li class="skills-items">
             <div class="skills-items-title-container">
-              <img class="skills-items-img" src="./images/Rectangle 57.svg"/>
+              <img class="skills-items-img" src="./images/Rectangle 57.svg" />
               <p class="skills-items-title">
                 Skills
               </p>
@@ -273,27 +132,62 @@
       <h3 id="form-headline">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </h3>
-      <form class="make-flex contact-form get-in-touch-form" action="https://formspree.io/f/mrgdqveo" method="POST">
-        <label for="name" hidden>Name</label>  
+      <form id="contact-form" class="make-flex contact-form get-in-touch-form" action="https://formspree.io/f/mrgdqveo" method="POST">
+        <label for="name" hidden>Name</label>
         <input type="text" name="Name" id="name" class="inputs" placeholder="Full name" maxlength="50" required>
         <label for="email" hidden>Email</label>
         <input type="email" name="Email" id="email" class="inputs" placeholder="Email address" required>
+        <small class="error"></small>
         <label for="message" hidden>Message</label>
-        <textarea name="Message" id="message" placeholder="Enter text here" class="inputs" id="" cols="30" rows="3" maxlength="500" required></textarea>
+        <textarea name="Message" id="message" placeholder="Enter text here" class="inputs" id="" cols="30" rows="3"
+          maxlength="500" required></textarea>
         <button type="submit" name="button" class="button">Get in touch</button>
       </form>
     </section>
     <!-- Footer -->
     <section class="footer-container">
       <ul class="footer-button-group">
-        <li class="footer-social-media-button"><a href="https://github.com/mperezbazan"><img src="./githubIcon.png" alt="Github icon"/></a></li>
-        <li class="footer-social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img src="./images/Linkedin-dark.svg" alt="Linkedin icon"/></a></li>
-        <li class="footer-social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img src="./images/Angelist-dark.svg" alt="Angelist icon"/></a></li>
-        <li class="footer-social-media-button"><a href="https://twitter.com/mperezbazan"><img src="./images/Twitter-dark.svg" alt="Twitter icon"/></a></li>
-        <li class="footer-social-media-button"><a href="https://medium.com/@martin.perezbazan"><img src="./images/Medium-dark.svg" alt="Medium icon"/></a></li>
+        <li class="footer-social-media-button"><a href="https://github.com/mperezbazan"><img src="./githubIcon.png"
+              alt="Github icon" /></a></li>
+        <li class="footer-social-media-button"><a href="https://linkedin.com/in/mperezbazan"><img
+              src="./images/Linkedin-dark.svg" alt="Linkedin icon" /></a></li>
+        <li class="footer-social-media-button"><a href="https://angel.co/u/martin-perez-bazan"><img
+              src="./images/Angelist-dark.svg" alt="Angelist icon" /></a></li>
+        <li class="footer-social-media-button"><a href="https://twitter.com/mperezbazan"><img
+              src="./images/Twitter-dark.svg" alt="Twitter icon" /></a></li>
+        <li class="footer-social-media-button"><a href="https://medium.com/@martin.perezbazan"><img
+              src="./images/Medium-dark.svg" alt="Medium icon" /></a></li>
       </ul>
-      <hr class="footer-bottom-line lg-none"/>
+      <hr class="footer-bottom-line lg-none" />
     </section>
+    <div class="modal display-none" id="project-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-content">
+            <h3 class="modal-title"></h3>
+            <ul class="modal-tags">
+            </ul>
+          </div>
+          <button class="modal-button-close" type="button">&#10799;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image-container">
+            <img src="" alt="Project image" class="modal-image">
+          </div>
+          <div class="modal-text-container">
+            <p class="modal-text"></p>
+            <div class="modal-buttons">
+              <a href="#" class="modal-footer-button button" id="liveButton">See Live <img
+                  src="./images/Icon-see live.svg" alt="Icon to see live"> </a>
+              <a href="#" class="modal-footer-button button" id="sourceButton">See Source <img
+                  src="./images/Icon-see source.svg" alt="Icon to see source"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
+<script src="script.js"></script>
+
 </html>
