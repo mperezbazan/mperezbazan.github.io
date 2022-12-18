@@ -8,52 +8,68 @@ const projects = [
     sourceLink: 'https://github.com/mperezbazan/CapstoneProject_1',
   },
   {
+    name: 'ZAZ Admin',
+    description: "A website to administrate a Webdesign company",
+    image: 'ZAZ.png',
+    technologies: ['ReactJs', 'NodeJs', 'MongoDB'],
+    liveLink: 'https://gestion.zaz.com.ar/',
+    sourceLink: 'https://gestion.zaz.com.ar/',
+  },
+  {
+    name: 'Argentina World Latin Dance Cup',
+    description: "A website to administrate the AWLDC participants",
+    image: 'AWLDC.png',
+    technologies: ['ReactJs', 'NodeJs', 'MongoDB'],
+    liveLink: 'https://awldc.dalproducciones.com.ar/',
+    sourceLink: 'https://awldc.dalproducciones.com.ar/',
+  },
+  {
+    name: 'ToDo List with React',
+    description: "A simple ToDo List, made with ReactJs",
+    image: 'TodoReact.png',
+    technologies: ['ReactJs', 'CSS'],
+    liveLink: 'https://github.com/mperezbazan/react-todo-project',
+    sourceLink: 'https://github.com/mperezbazan/react-todo-project',
+  },
+  {
+    name: 'Leaderboard',
+    description: "A project to store a list of scores with names.",
+    image: 'Leaderboard.png',
+    technologies: ['HTML', 'CSS', 'Javascript', 'Webpack'],
+    liveLink: 'https://github.com/mperezbazan/Leaderboard',
+    sourceLink: 'https://github.com/mperezbazan/Leaderboard',
+  },
+  {
+    name: 'Pokemon',
+    description: "A project created in group for Microverse. Connect to Pokedeck API.",
+    image: 'Pokemon.png',
+    technologies: ['HTML', 'CSS', 'Javascript', 'Webpack'],
+    liveLink: 'https://mperezbazan.github.io/',
+    sourceLink: 'https://github.com/yayoamigo/Capstone-Project-POKEDECK/',
+  },
+  {
+    name: 'Bookstore',
+    description: "A project created with React and Redux to store books with authors.",
+    image: 'Bookstore.png',
+    technologies: ['ReactJs', 'Redux', 'CSS'],
+    liveLink: 'https://mperezbazan.github.io/',
+    sourceLink: 'https://github.com/mperezbazan/bookstore',
+  },
+  {
+    name: 'Math Magicians',
+    description: "A project created with React.",
+    image: 'MathMagicians.png',
+    technologies: ['ReactJs', 'CSS'],
+    liveLink: 'https://mperezbazan.github.io/',
+    sourceLink: 'https://github.com/mperezbazan/math-magicians',
+  },
+  {
     name: 'ToDo List',
     description: "A simple ToDo List, made with Javascript",
-    image: 'ToDoList.png',
+    image: 'TodoList.png',
     technologies: ['HTML', 'JavaScript', 'Webpack'],
     liveLink: 'https://mperezbazan.github.io/Todolist/dist',
     sourceLink: 'https://github.com/mperezbazan/Todolist',
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    image: 'Snapshoot-Data.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://mperezbazan.github.io/',
-    sourceLink: 'https://github.com/mperezbazan',
-  },
-  {
-    name: 'Website Portfolio',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    image: 'Snapshoot-Website.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://mperezbazan.github.io/',
-    sourceLink: 'https://github.com/mperezbazan',
-  },
-  {
-    name: 'Profesional Art Printing Data More',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    image: 'Snapshoot-Professional.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://mperezbazan.github.io/',
-    sourceLink: 'https://github.com/mperezbazan',
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    image: 'Snapshoot-Data.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://mperezbazan.github.io/',
-    sourceLink: 'https://github.com/mperezbazan',
-  },
-  {
-    name: 'Website Portfolio',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    image: 'Snapshoot-Website.png',
-    technologies: ['html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://mperezbazan.github.io/',
-    sourceLink: 'https://github.com/mperezbazan',
   },
 ];
 
@@ -107,6 +123,7 @@ projects.forEach((project, index) => {
       </div>
     </article>`;
   } else {
+    article.style.background=`linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/${project.image})`;
     article.classList.add('work-container', 'bg-image');
     if (index === 2 || index === 5) {
       article.classList.add('data-image');

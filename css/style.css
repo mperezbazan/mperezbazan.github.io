@@ -911,7 +911,7 @@ ul {
 
   .modal-image {
     flex-grow: 1;
-    max-height: max-content;
+    max-height: 400px;
     max-width: max-content;
   }
 
